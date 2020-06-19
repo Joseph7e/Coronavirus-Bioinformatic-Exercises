@@ -28,7 +28,8 @@ cat coronavirus_genomes/* > coronas.fasta
 
 ## Average Nucleotide Identity (ANI)
 
-The program fastANI calculates ANI between two or more genomes using an ultra fast 
+The program fastANI calculates ANI between two or more genomes by using kmer frequencies and the MinHASH algorithm.
+https://github.com/ParBLiSS/FastANI
 
 ```bash
 fastANI --help
