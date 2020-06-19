@@ -6,7 +6,7 @@ https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=U
 I am going to use the same starting genome sequences but use my own methods to determine phylogeny etc.
 
 
-<img src="https://cmr.asm.org/content/cmr/28/2/465/F7.large.jpg" width="320">
+<img src="https://cmr.asm.org/content/cmr/28/2/465/F7.large.jpg" width="520">
 
 
 
