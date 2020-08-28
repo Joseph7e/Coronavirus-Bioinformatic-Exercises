@@ -1,5 +1,14 @@
 # Replicate-COVID-19-study
 
+## Optional assembly of a coronavirus genome
+
+Data on NCBI ...
+
+
+
+
+## The main workflow
+
 This manuscript discusses the origin of the novel 2019 coronavirus. 
 https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=UcRnVCfmY1QAAAAA:eJDSlVlUjLLm_xs5ZCFhhSgoLDhEbvNsB7wqjt8e7iN3EjvFRZL74jiKyN09BEjYPEhlz7PO#t0005
 
