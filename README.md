@@ -24,13 +24,17 @@ I converted it a tab deliminated text file and uploaded it to this github repo.
 
 ## Copy starting data and setup working directory
 
+The starting data can be copied from a shared directory on the server. Each genome is found in an individual FASTA file with filenames and FASTA headers uniquely identified in the sample sheet. Be sure to review FASTA file formats.
+
+The 'unknown' COVID-19 sequences include 'UNKNOWN' as part of their filename and sequence header.
+
 ```bash
 mkdir ~/coronavirus-analysis
 cd ~/coronavirus-analysis
 cp -r /home/genome/joseph7e/coronavirus_genomes/ ./
 
-# combine genomes into a single fasta file
-cat coronavirus_genomes/* > coronas.fasta
+# view the first few lines of each FASTA file
+head coronavirus_genomes/*.fasta
 
 ```
 
@@ -38,6 +42,18 @@ cat coronavirus_genomes/* > coronas.fasta
 
 
 ## Optional step 2: **de novo** assembly of a covid-19 genome.
+
+
+## Combine all the data into a single FASTA file. 
+
+```bash
+cd ~/coronavirus-analysis
+cat coronavirus_genomes/* > coronas.fasta
+
+# examine the new file
+less -S coronas.fasta
+
+```
 
 ## Average Nucleotide Identity (ANI)
 
