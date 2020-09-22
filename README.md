@@ -1,13 +1,14 @@
-# Replicate-COVID-19-study
+# Coronavirus Bioinformatic Exercises
 
 ## Optional assembly of a coronavirus genome
 
+In the next set of exercises we will download one of the covid-19 genomes 
 Data on NCBI ...
 
 
 
 
-## The main workflow
+## Investigating the origin of the novel 2019 coronavirus, COVID-19
 
 This manuscript discusses the origin of the novel 2019 coronavirus. 
 https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=UcRnVCfmY1QAAAAA:eJDSlVlUjLLm_xs5ZCFhhSgoLDhEbvNsB7wqjt8e7iN3EjvFRZL74jiKyN09BEjYPEhlz7PO#t0005
