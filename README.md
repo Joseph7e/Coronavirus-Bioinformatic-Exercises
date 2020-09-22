@@ -1,27 +1,22 @@
 # Coronavirus Bioinformatic Exercises
 
-## Optional assembly of a coronavirus genome
-
-In the next set of exercises we will download one of the covid-19 genomes 
-Data on NCBI ...
-
-
-
 
 ## Investigating the origin of the novel 2019 coronavirus, COVID-19
 
-This manuscript discusses the origin of the novel 2019 coronavirus. 
-https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=UcRnVCfmY1QAAAAA:eJDSlVlUjLLm_xs5ZCFhhSgoLDhEbvNsB7wqjt8e7iN3EjvFRZL74jiKyN09BEjYPEhlz7PO#t0005
 
-I am going to use the same starting genome sequences but use my own methods to determine phylogeny etc.
+To start this analysis we will download some reference covid-19 genomes that were originally isolated and sequenced at the beginning of the outbreak. One was isolated from Wuhan and the other from Florida. These two genomes will be considered our 'unknown' novel isolates. We will combine these 'unknown' sequences with a set of 'known' coronavirus genomes sequenced in the past. These 'known' sequences include coronaviruses from diffrent genera (Figure 1) that were isolated form various hosts, including civets, bats, humans, and more. 
 
+We will use various methods to investigate which 'known' sequences are closest (phylogenetically) to our novel covid-19 sequences.
 
 <img src="https://cmr.asm.org/content/cmr/28/2/465/F7.large.jpg" width="520">
 
 
+The following manuscript discusses the origin of the novel 2019 coronavirus and includes NCBI accessions for various coronaviruses genomes. This dataset includes a good variety of coronaviruses and will be used as our starting point. 
+https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=UcRnVCfmY1QAAAAA:eJDSlVlUjLLm_xs5ZCFhhSgoLDhEbvNsB7wqjt8e7iN3EjvFRZL74jiKyN09BEjYPEhlz7PO#t0005
+
 
 ## Samples
-The list of genome accessions can be found in this supplementary table. I converted it a tab deliminated text file and uploaded it to ron.
+The list of genome accessions can be found in this supplementary table. I converted it a tab deliminated text file and uploaded it to this github repo.
 https://ars.els-cdn.com/content/image/1-s2.0-S1567134820301167-mmc1.pdf
 
 ## Copy starting data and setup working directory
