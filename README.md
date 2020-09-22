@@ -90,6 +90,7 @@ less -S coronas.fasta
 
 ## Average Nucleotide Identity (ANI)
 
+The first analysis we'll run calculates the average nucleotide identity. This will give us pairwise statistics showing the % similarity of two genomes.
 The program fastANI calculates ANI between two or more genomes by using kmer frequencies and the MinHASH algorithm.
 https://github.com/ParBLiSS/FastANI
 
@@ -106,8 +107,14 @@ readlink -f coronavirus_genomes/* > all_genomes.txt
 fastANI -q coronavirus_genomes/NC_045512-UNKNOWN.fasta --rl all_genomes.txt -o NC_045512_v_all.txt --fragLen 200
 
 ```
+
+Results:
+We are simply looking to see which 'known' sequence has the highest ANI score for each 'unknown' sequence.
+
 ## reciprical best BLAST
-Query and Subject are the exact same. 
+BLAST is a very common bioinformtic tool. It's the primary program behind a lot of bioinformtic software. See the genome assembly workflow for a description.
+
+In this instance we will BLAST all of the coronavirus genomes against themselves, both the query and the subject are the same FASTA file. The output is a tab deliminted file showing the top closest matching sequences for each genome sequence.
 
 ```bash
 blastn -query coronas.fasta -subject coronas.fasta -outfmt 6 -out self-blast-format6.txt
