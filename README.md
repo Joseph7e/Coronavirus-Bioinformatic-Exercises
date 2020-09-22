@@ -16,8 +16,11 @@ https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=U
 
 
 ## Samples
-The list of genome accessions can be found in this supplementary table. I converted it a tab deliminated text file and uploaded it to this github repo.
-https://ars.els-cdn.com/content/image/1-s2.0-S1567134820301167-mmc1.pdf
+The list of genome accessions can be found in this supplementary table. https://ars.els-cdn.com/content/image/1-s2.0-S1567134820301167-mmc1.pdf
+
+
+I converted it a tab deliminated text file and uploaded it to this github repo.
+
 
 ## Copy starting data and setup working directory
 
@@ -30,6 +33,11 @@ cp -r /home/genome/joseph7e/coronavirus_genomes/ ./
 cat coronavirus_genomes/* > coronas.fasta
 
 ```
+
+## Optional step 1: Download other coronavirus genomes from NCBI. These can be more 'unknown' covid-19 genomes or 'known' sequences from various hosts.
+
+
+## Optional step 2: **de novo** assembly of a covid-19 genome.
 
 ## Average Nucleotide Identity (ANI)
 
