@@ -40,8 +40,41 @@ head coronavirus_genomes/*.fasta
 
 ## Optional step 1: Download other coronavirus genomes from NCBI. These can be more 'unknown' covid-19 genomes or 'known' sequences from various hosts.
 
+The following page from NCBI includes a table to ~60 Coronaviridae genome assemblies. These all include isolation sources and download links. 
+
+
+https://www.ncbi.nlm.nih.gov/genomes/GenomesGroup.cgi?taxid=11118
+
+
+To retrieve the sequence click on the NCBI accession number (formatted like "NC_XXXXXXXX") to bring up the sequence page. On the upper right is a drop down menu called "Send to:" Change "Choose Destination" to "File", change the format from "GenBank" to "FASTA(text)", and Create. You'll need to transfer the file to RON. Alternatively, instead of using the "Send to" function, you can change the format on the upper right of the page from "GenBank" to "FASTA(text)" and copy the sequence to your clipboard. You can then simply paste the sequence into a text editor (i.e. nano) on the server and save the file.
+
+Be sure to make the filename and FASTA header for the sequence something meaningful and include it in the "coronavirus_genomes/"  directory we created above.
 
 ## Optional step 2: **de novo** assembly of a covid-19 genome.
+
+Here I will show you how to download data from the Sequence read archive. I simply searched for covid-19 in the SRA https://www.ncbi.nlm.nih.gov/sra and skimmed through for an illumina paired-end dataset. 
+
+The first match was a Illumina NovaSeq paired-end dataset from 2020-09-19. It's very new.
+
+https://www.ncbi.nlm.nih.gov/sra/ERX4536357[accn]
+
+Once you find a dataset you'll want to take note of the 'Run' accession, in this case its ERR4604210.
+
+Read the help menu to determine what the options that I use do.
+
+```bash
+cd ~/coronavirus-analysis
+mkdir new_reads
+cd new_reads
+
+# Download the data to RON, we can specify the number of reads ("spots") we want to download.
+fastq-dump --help
+fastq-dump --gzip --split-files -X 1000000 ERR4604210
+```
+
+After you download the data you can follow the same bacterial assembly workflow as before. Just be sure to be mindful of potential options you may want to change in each program. For example, use 'Virus' as the kingdom for PROKKA.
+
+** if there is interest I can go through an download a bunch of datasets, create a sample sheet, and include them in a shared directory on RON **
 
 
 ## Combine all the data into a single FASTA file. 
