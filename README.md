@@ -11,6 +11,7 @@ We will use various methods to investigate which 'known' sequences are closest (
 <img src="https://cmr.asm.org/content/cmr/28/2/465/F7.large.jpg" width="520">
 source:https://cmr.asm.org/content/28/2/465/F7
 
+
 The following manuscript discusses the origin of the novel 2019 coronavirus and includes NCBI accessions for various coronaviruses genomes. This dataset includes a good variety of coronaviruses and will be used as our starting point. 
 https://www.sciencedirect.com/science/article/pii/S1567134820301167?casa_token=UcRnVCfmY1QAAAAA:eJDSlVlUjLLm_xs5ZCFhhSgoLDhEbvNsB7wqjt8e7iN3EjvFRZL74jiKyN09BEjYPEhlz7PO#t0005
 
